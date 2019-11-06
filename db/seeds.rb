@@ -1,5 +1,6 @@
 require_relative('../models/student.rb')
 
+
 student1 = Student.new (
   {
     "first_name" => "Harry",
