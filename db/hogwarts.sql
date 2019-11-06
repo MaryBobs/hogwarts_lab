@@ -1,3 +1,4 @@
+DROP TABLE houses;
 DROP TABLE students;
 
 CREATE TABLE students (
@@ -7,3 +8,9 @@ CREATE TABLE students (
   house VARCHAR(255),
   age INT4
 );
+
+CREATE TABLE houses (
+  id serial4 PRIMARY KEY,
+  name VARCHAR(255),
+  url VARCHAR(255)
+)
