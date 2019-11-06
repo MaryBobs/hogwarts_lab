@@ -30,6 +30,12 @@ def save()
     @id = student.first()['id'].to_i
 end
 
+def find_house()
+  sql = "SELECT * FROM houses WHERE id = $1"
+  values = [@house_id]
+  return SqlRunner.run(sql,values).map{|house| House.new(house)}
+end
+
 def self.find_by_id(id)
   sql = "SELECT * FROM students WHERE id = $1"
   values = [id]
