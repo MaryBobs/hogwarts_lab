@@ -4,6 +4,7 @@ class House
 
 attr_reader :id, :name, :url
 
+
 def initialize(options)
   @id = options['id'].to_i if options['id']
   @name = options['name']
